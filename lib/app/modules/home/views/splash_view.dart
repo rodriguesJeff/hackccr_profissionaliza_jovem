@@ -7,9 +7,6 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<SplashController>(
-      initState: (state) {
-        Get.find<SplashController>().openPresentationPage();
-      },
       builder: (_) {
         return Scaffold(
           backgroundColor: Utils.primaryColor,
