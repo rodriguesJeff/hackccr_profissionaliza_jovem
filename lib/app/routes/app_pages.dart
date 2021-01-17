@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:hackccr_profissionaliza_jovem/app/modules/home/bindings/splash_bindings.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/home_view.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/login_view.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/presentation_view.dart';
@@ -17,6 +18,7 @@ class AppPages {
     GetPage (
       name: _Paths.SPLASH,
       page: () => SplashView(),
+      binding: SplashBinding(),
     ),
     GetPage(
       name: _Paths.LOGIN,

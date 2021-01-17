@@ -1,21 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:get/get.dart';
+import 'package:hackccr_profissionaliza_jovem/app/modules/home/controllers/splash_controller.dart';
 import 'package:hackccr_profissionaliza_jovem/app/shared/utils.dart';
 
-class SplashView extends GetView {
+class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Utils.primaryColor,
-      body: Center(
-        child: CircleAvatar(
-          minRadius: MediaQuery.of(context).size.width * 0.8,
-          child: SvgPicture.asset(
-            Images.logo,
+    return GetBuilder<SplashController>(
+      initState: (state) {
+        Get.find<SplashController>().openPresentationPage();
+      },
+      builder: (_) {
+        return Scaffold(
+          backgroundColor: Utils.primaryColor,
+          body: Center(
+            child: Container(
+              width: 300.0,
+              height: 300.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(300.0),
+                color: Colors.white,
+              ),
+              child: SizedBox(
+                height: 150.0,
+                width: 150.0,
+                child: Image(
+                  image: AssetImage(logo),
+                ),
+              ),
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 }

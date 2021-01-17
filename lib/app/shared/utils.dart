@@ -10,6 +10,4 @@ class Utils {
   static Color greenAction = Color(0xff4CAF50);
 }
 
-class Images {
-  static String logo = 'assets/svg/logo.svg';
-}
+const String logo = 'assets/logo.png';
