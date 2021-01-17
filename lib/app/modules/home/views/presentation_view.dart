@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/pages/page_mid.dart';
 
 import 'pages/page_init.dart';
 
@@ -14,6 +15,7 @@ _buildingPageView() {
   return PageView(
     children: [
       PageInitView(),
+      PageMidView(),
     ],
   );
 }
