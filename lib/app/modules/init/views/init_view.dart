@@ -53,18 +53,21 @@ class InitiView extends StatelessWidget {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(25.0),
                       ),
-                      child: Column(children: [
-                        SizedBox(height: 10.0),
-                        Image(
-                          width: 75.0,
-                          height: 75.0,
-                          color: Utils.yellowPrimary,
-                          image: AssetImage(teacher),
-                        ),
-                        Text('PROFESSOR',
-                            style: TextStyle(
-                                color: Utils.yellowPrimary, fontSize: 20.0)),
-                      ])),
+                      child: GestureDetector(
+                        onTap: () {Get.offAllNamed('/login');},
+                        child: Column(children: [
+                          SizedBox(height: 10.0),
+                          Image(
+                            width: 75.0,
+                            height: 75.0,
+                            color: Utils.yellowPrimary,
+                            image: AssetImage(teacher),
+                          ),
+                          Text('PROFESSOR',
+                              style: TextStyle(
+                                  color: Utils.yellowPrimary, fontSize: 20.0)),
+                        ]),
+                      )),
                 ],
               ),
             ),
