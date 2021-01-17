@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/pages/page_end.dart';
-import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/pages/page_mid.dart';
 
+import 'pages/page_end.dart';
 import 'pages/page_init.dart';
+import 'pages/page_mid.dart';
 
 class PresentationView extends StatelessWidget {
   @override 
