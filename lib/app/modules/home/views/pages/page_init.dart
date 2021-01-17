@@ -6,23 +6,32 @@ class PageInitView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Utils.primaryColor,
-      body: Stack(
+      body: Stack(        
         children: [
-          Positioned(
-            top: 25.0,
-            right: 10.0,
-            left: 10.0,
-            child: Text(
-              'Profissionaliza Jovem é\num projeto que oferece\ncursos  de capacitação\nprofissional para jovens\nque necessitam ingressar\nno mercado de trabalho.',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 25.0,
-              ),
+          Container(
+            alignment: Alignment.center,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image(
+                  width: 200.0,
+                  height: 200.0,
+                  image: AssetImage(image1),
+                ),
+                SizedBox(height: 25.0),
+                Text(
+                  'Profissionaliza Jovem é\num projeto que oferece\ncursos  de capacitação\nprofissional para jovens\nque necessitam ingressar\nno mercado de trabalho.',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25.0,
+                  ),
+                ),
+              ],
             ),
           ),
           Positioned(
-            bottom: 0.0,
-            right: 0.0,
+            bottom: 15.0,
+            right: 10.0,
             child: GestureDetector(
               onTap: () {},
               child: Text(

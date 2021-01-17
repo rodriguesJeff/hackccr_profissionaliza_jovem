@@ -11,3 +11,6 @@ class Utils {
 }
 
 const String logo = 'assets/logo.png';
+const String image1 = 'assets/img1.png';
+const String image2 = 'assets/img2.png';
+const String user = 'assets/user.png';
