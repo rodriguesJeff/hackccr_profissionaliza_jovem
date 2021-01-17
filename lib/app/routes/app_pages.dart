@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/init/views/init_view.dart';
+import 'package:hackccr_profissionaliza_jovem/app/modules/register/views/register_view.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/splash/bindings/splash_bindings.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/home/views/home_view.dart';
 import 'package:hackccr_profissionaliza_jovem/app/modules/login/views/login_view.dart';
@@ -32,6 +33,10 @@ class AppPages {
     GetPage(
       name: _Paths.INIT,
       page: () => InitiView(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER,
+      page: () => RegisterView(),
     )
   ];
 }
