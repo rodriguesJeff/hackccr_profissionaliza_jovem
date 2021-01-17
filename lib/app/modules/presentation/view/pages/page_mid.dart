@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hackccr_profissionaliza_jovem/app/shared/utils.dart';
 
 class PageMidView extends StatelessWidget {
@@ -38,7 +39,9 @@ class PageMidView extends StatelessWidget {
             bottom: 15.0,
             right: 10.0,
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Get.offAllNamed('/init');
+              },
               child: Text(
                 'Pular',
                 style: TextStyle(
