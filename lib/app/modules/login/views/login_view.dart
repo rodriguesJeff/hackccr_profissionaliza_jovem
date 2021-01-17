@@ -86,14 +86,17 @@ class LoginView extends GetView {
                           padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
                           child: Text('Esqueceu a senha?', style: TextStyle(fontSize: 10.0, color: Utils.greyMid)),
                         ),
-                        Container(
-                          width: 300.0,
-                          height: 55.0,
-                          decoration: BoxDecoration(
-                            color: Utils.greenAction,
-                            borderRadius: BorderRadius.circular(20.0),
+                        GestureDetector(
+                          onTap: () {Get.toNamed('/home');},
+                          child: Container(
+                            width: 300.0,
+                            height: 55.0,
+                            decoration: BoxDecoration(
+                              color: Utils.greenAction,
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            child: Center(child: Text('ENTRAR', style: TextStyle(color: Colors.white, fontSize: 20.0))),
                           ),
-                          child: Center(child: Text('ENTRAR', style: TextStyle(color: Colors.white, fontSize: 20.0))),
                         ),
                         SizedBox(height: 10.0),
                         Center(child: Text('OU', style: TextStyle(color: Utils.darkBlue, fontSize: 25.0))),
