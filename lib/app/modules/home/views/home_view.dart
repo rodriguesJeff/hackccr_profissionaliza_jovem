@@ -108,6 +108,16 @@ class HomeView extends GetView<HomeController> {
                     title: Text('Criatividade e resolução de problemas',
                         style: TextStyle(fontSize: 15.0)),
                   ),
+                  Container(
+                    padding: EdgeInsets.only(left: 15.0),
+                    alignment: Alignment.topLeft,
+                    child:
+                        Text('Sessões de brainstorming', style: TextStyle(fontSize: 20.0)),
+                  ),
+                  ListTile(
+                    title: Text('Assistir vídeos',
+                        style: TextStyle(fontSize: 15.0)),
+                  ),
                 ],
               ),
             ),
